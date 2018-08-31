@@ -25,7 +25,6 @@ void imprime (int valor){
 cout << valor << endl;
 }
 
-
 int main()
 {
     int controle = 0;
