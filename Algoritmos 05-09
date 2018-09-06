@@ -1,0 +1,55 @@
+##### Aula 05/09 - Algoritmos - C++ ########
+
+/******************************************************************************
+  EXERCICIO - ITEM 02
+*******************************************************************************/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int valor_1= 20;
+    int valor_2 = 30;
+    int resultado = valor_1 + valor_2;
+    
+    cout << resultado;
+     return 0;
+}
+
+###########################################################
+/******************************************************************************
+ AULA 05/09  - ATIVIDADE EM SALA 
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+int soma_pontos (int pontos[], int num_jogos){
+    int resultado = 0;
+    int controle = 0;
+    while(controle < num_jogos){
+    resultado = resultado + pontos[controle];
+    controle = controle + 1;
+    } 
+    return resultado;
+}
+int main()
+{
+    int res_atl[3] = {3,1,3};
+    int res_cru[3] = {1,3,3};
+    if (soma_pontos(res_atl,3) > soma_pontos(res_cru,3)){
+        cout << "Atletico Campeao";
+    }
+    else if  (soma_pontos(res_cru,3) > soma_pontos(res_atl,3))
+    cout << "Cruzeiro...";
+    else 
+    cout << "empate";
+    return 0;
+}
+    
+
+
+
+
+
+
+
+
